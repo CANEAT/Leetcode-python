@@ -1,5 +1,5 @@
 '''
-#超时
+#超时，暴力遍历通过95%
 def maxArea(height):
     res = 0
     n = len(height)
@@ -10,6 +10,7 @@ def maxArea(height):
             res = max(res,area)
     return res
 '''
+#定义双指针，不断去除无效的池子
 def maxArea(height):
     i,j = 0,len(height)-1
     res = 0
